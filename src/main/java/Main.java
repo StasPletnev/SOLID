@@ -31,7 +31,7 @@ public class Main {
             purchase.addPurchase(product, count);
         }
         scanner.close();//Закрыл сканер
-        long sum = purchase.sum(products);
+        long sum = Basket.sum(products, purchase.getPurchases());
         System.out.println("ИТОГО: " + sum);
     }
 }
